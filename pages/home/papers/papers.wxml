@@ -1,0 +1,62 @@
+<view class='box'>
+  <view class='tip'>请根据页面指引拍摄对应证件照片，保证文字清晰可见</view>
+
+  <view class='photoBlock'>
+    <view class='photo_cnt'>
+      <view class='photo_cnt_list'
+        wx:for='{{f_zj}}'
+        bindtap='openCamera'
+        data-text='{{item.text}}'
+        data-classify='up'
+        data-index='{{index}}'
+        data-changed="{{item.changed}}"
+        data-img="{{item.img}}"
+      >
+        <image class='photo_cnt_list_img' src='{{item.img}}'></image>
+      </view>
+    </view>
+  </view>
+  <view style='height:12rpx;background:#0097FF;'></view>
+  <view class='photoBlock'>
+    <!-- <view class='photo_title'>
+      <text>补传照片</text>
+    </view> -->
+    <view class='photo_cnt'>
+      <view class='photo_cnt_list'
+          wx:for='{{photos_add}}'
+          data-ml_index="{{index}}"
+          bindtap='addImgClick'
+        >
+          <image class='photo_cnt_list_img' src='{{item}}'></image>
+        </view>
+      <view class='photo_cnt_list'
+        wx:for='{{f_other}}'
+        bindtap='openCamera'
+        data-text='{{item.text}}'
+        data-classify='other'
+        data-index='{{index}}'
+        data-changed="{{item.changed}}"
+        data-img="{{item.img}}"
+      >
+        <image class='photo_cnt_list_img' src='{{item.img}}'></image>
+      </view>
+    </view>
+  </view>
+  <button disabled='{{!canUpload}}' bindtap='ok'>拍照完成</button>
+
+  <ml_help></ml_help>
+</view>
+
+<ml_camera ml_data="请拍摄 {{cameraData.text}}" cameraHide="{{cameraHide}}" bind:cameraBack='cameraBack' bind:photograph='photograph'></ml_camera>
+
+<view class="look" hidden='{{lookHide}}'>
+  <view class='look_tip'>{{cameraData.text}}</view>
+  <image class='look_image' src='{{cameraData.img}}'></image>
+  <view class='camera_back' bindtap='lookBack'>
+    <image mode='aspectFit' src='../../../icons/icon_back.svg'></image>
+  </view>
+  <view class='camera_btn'
+    bindtap='lookOpenCamera'
+    data-cameraData="{{cameraData}}"
+  >重拍</view>
+</view>

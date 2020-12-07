@@ -1,0 +1,36 @@
+<view class='box'>
+  <view class='top'>
+    <image mode='widthFix' class='top_icon' src='./img/icon_tjxz.png'></image>
+    <view class='top_text'>请使用微信最新版扫描下方小程序码</view>
+    <image mode='widthFix' class='top_ewm' src='./img/xiaochengxuma.jpg'></image>
+  </view>
+  
+  <view wx:if='{{isAdd}}'>
+    <view class='label'>
+      <view class='label_title'>协助人名称：</view>
+      <input class='label_cnt' placeholder='请输入' value='{{name}}' bindblur='nameBlur'></input>
+    </view>
+    <view class='label'>
+      <view class='label_title'>协助人手机：</view>
+      <input class='label_cnt' type='number' placeholder='请输入' value='{{phone}}' bindinput='phoneBlur' maxlength='11'></input>
+    </view>
+    <button class='submit' disabled='{{submitDis}}' bindtap='submit'>确认添加</button>
+  </view>
+
+  <view wx:else>
+    <view class='label'>
+      <view class='label_title'>协助人名称：</view>
+      <view class='label_cnt'>{{userAssistData.customerName}}</view>
+    </view>
+    <view class='label'>
+      <view class='label_title'>协助人手机：</view>
+      <view class='label_cnt' class="customerPhone">{{userAssistData.customerPhone}} 
+        <span class="rightText" bindtap="call">
+          <image  class='other_img' src='./img/icon_mobile.png' mode='widthFix'></image>
+          拨打电话
+        </span>
+      </view>
+    </view>
+    <button class='submit' bindtap='changeAssist'>修改协助人</button>
+  </view>
+</view>

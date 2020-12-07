@@ -1,0 +1,10 @@
+<view class='block'>
+  <view class='block_title'>{{title}} 
+     <span class="rightText" bindtap ="_callnum">
+       <image  wx:if="{{hasR}}" class='other_img' src='../img/icon_mobile.png'   mode='widthFix'></image>
+       {{rightText}}
+    </span></view>
+  <view class='block_cnt'>
+    <slot></slot>
+  </view>
+</view>

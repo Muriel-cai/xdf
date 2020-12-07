@@ -1,0 +1,32 @@
+.block{
+  position:relative;
+  padding:30rpx;
+  background:#fff;
+  box-shadow:0 0 5px 0 #bbb;
+  border-radius:5px;
+  margin-bottom:30rpx;
+}
+.block_title{
+  font-size:16px;
+  font-weight:bold;
+  border-bottom:1px solid #ddd;
+  padding-bottom:20rpx;
+}
+.block_cnt{
+  padding-top:20rpx;
+  color:#888;
+}
+.rightText{
+  float: right;
+  display: block;
+  padding:0 5rpx 0 30rpx;
+  text-align: center;
+  display:flex;
+}
+.rightText image{
+  width:32rpx;
+  height: 32rpx;
+  vertical-align:middle;
+  margin: auto;
+  margin-right: 8rpx;
+}

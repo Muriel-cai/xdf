@@ -1,0 +1,27 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/home/home",
+        "pages/home/case/case",
+        "pages/home/scene/scene",
+        "pages/home/papers/papers",
+        "pages/home/assist/assist",
+        "pages/home/message/message",
+        "pages/home/video/video",
+        "pages/home/case/history/history",
+        "pages/home/case/lookImg/lookImg"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0097FF",
+        "navigationBarTitleText": "新东方定损",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#000000"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置将用于事故定损"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

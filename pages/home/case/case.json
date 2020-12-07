@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "定损进度",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "ml_block": "./components/block"
+  }
+}

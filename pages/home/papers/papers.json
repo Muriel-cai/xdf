@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "请单证拍照",
+  "usingComponents": {
+    "ml_help": "../components/help",
+    "ml_camera": "../components/camera"
+  }
+}

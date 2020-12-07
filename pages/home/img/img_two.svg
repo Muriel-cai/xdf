@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbc286;
+      }
+
+      .cls-2 {
+        fill: #fcefe2;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #f9a34a;
+      }
+
+      .cls-5 {
+        fill: #f4ba64;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="home_card" transform="translate(0 12)">
+    <path id="路径_18" data-name="路径 18" class="cls-1" d="M88.889,88H11.111C5,88,0,82.141,0,74.981V13.019C0,5.859,5,0,11.111,0H88.889C95,0,100,5.859,100,13.019V74.981C100,82.141,95,88,88.889,88Zm0,0" transform="translate(0 -6)"/>
+    <path id="路径_19" data-name="路径 19" class="cls-2" d="M353.978,178.356h-30a2.778,2.778,0,0,1,0-5.556h30a2.778,2.778,0,0,1,0,5.556Z" transform="translate(-265.436 -141.8)"/>
+    <path id="路径_20" data-name="路径 20" class="cls-3" d="M135.378,77.356h-30a2.778,2.778,0,0,1,0-5.556h30a2.778,2.778,0,0,1,0,5.556Z" transform="translate(-84.787 -63.335)"/>
+    <path id="路径_21" data-name="路径 21" class="cls-3" d="M310.378,77.356h-30a2.778,2.778,0,0,1,0-5.556h30a2.778,2.778,0,1,1,0,5.556Z" transform="translate(-229.406 -63.335)"/>
+    <path id="路径_22" data-name="路径 22" class="cls-2" d="M353.978,280.756h-30a2.778,2.778,0,1,1,0-5.556h30a2.778,2.778,0,1,1,0,5.556Z" transform="translate(-265.436 -226.422)"/>
+    <path id="路径_23" data-name="路径 23" class="cls-2" d="M78.315,192.715H53.767a4.179,4.179,0,0,1-4.167-4.167V157.767a4.179,4.179,0,0,1,4.167-4.167H78.315a4.179,4.179,0,0,1,4.167,4.167v30.781a4.179,4.179,0,0,1-4.167,4.167Zm0,0" transform="translate(-40.989 -125.933)"/>
+    <rect id="矩形_95" data-name="矩形 95" class="cls-4" width="11.059" height="10.122" transform="translate(19.306 49.993)"/>
+    <path id="路径_24" data-name="路径 24" class="cls-5" d="M78.9,269.8l2.153,2.153-1.84,10.122H69.995A13.376,13.376,0,0,1,78.9,269.8Zm7.674,0-2.153,2.153,1.84,10.122h9.2c.017,0,.33-8.594-8.889-12.274Zm0,0" transform="translate(-57.842 -221.96)"/>
+    <path id="路径_25" data-name="路径 25" class="cls-5" d="M102.8,185.848a7.049,7.049,0,1,0,7.049-7.049,7.057,7.057,0,0,0-7.049,7.049Zm0,0" transform="translate(-84.953 -146.758)"/>
+    <rect id="矩形_109" data-name="矩形 109" class="cls-6" width="100" height="100" transform="translate(0 -12)"/>
+  </g>
+</svg>

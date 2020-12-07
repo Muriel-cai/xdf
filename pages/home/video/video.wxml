@@ -1,0 +1,19 @@
+<view class="container-box">
+		<view class="camera-box">
+				<webrtc-room id="webrtcroom" template="ml" autoplay="{{autoplay}}" enableCamera="{{enableCamera}}" roomID="{{roomID}}" userID="{{userID}}" roomCreator="{{roomCreator}}" userSig="{{userSig}}" sdkAppID="{{sdkAppID}}" accountType="{{accountType}}" privateMapKey="{{privateMapKey}}" beauty="{{beauty}}" muted="{{muted}}" debug="{{debug}}" bindRoomEvent="onRoomEvent" enableIM="true"></webrtc-room>
+		</view>
+		<view class="operate">
+        <view class="img-box">
+						<image src="../../Resources/exit.png" bindtap="exit"></image>
+						<text>退出</text>
+				</view>
+				<view class="img-box">
+						<image src="../../Resources/camera{{frontCamera ? '':'-gray'}}.png" bindtap="changeCamera"></image>
+						<text>翻转</text>
+				</view>
+				<!-- <view class="img-box">
+						<image src="../../Resources/{{muted ? 'mic-dis' : 'mic'}}.png" bindtap="changeMute"></image>
+						<text>声音</text>
+				</view> -->
+		</view>
+</view>

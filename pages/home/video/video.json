@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "webrtc-room": "/pages/home/components/webrtc-room/webrtc-room"
+  }
+}

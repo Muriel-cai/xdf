@@ -1,0 +1,26 @@
+<view class='tab'>
+  <view
+    wx:for='{{example}}'
+    class='tab_list {{tabActive==item.img?"active":""}}'
+    data-ml="{{item.img}}"
+    bindtap='tabClickHandle'
+  >{{item.title}}</view>
+</view>
+<view class='imgBox' hidden="{{tabActive!=1}}">
+  <view class='imgBox_list'
+    wx:for="{{sceneImg}}"
+    data-ml_index="{{index}}"
+    bindtap='sceneImgClick'
+  >
+    <image src='{{item}}'></image>
+  </view>
+</view>
+<view class='imgBox' hidden="{{tabActive!=2}}">
+  <view class='imgBox_list'
+    wx:for="{{paperImg}}"
+    data-ml_index="{{index}}"
+    bindtap='paperImgClick'
+  >
+    <image src='{{item}}'></image>
+  </view>
+</view>

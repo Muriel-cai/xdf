@@ -1,0 +1,53 @@
+.box{
+  padding:60rpx;
+}
+.top{
+  text-align: center;
+  margin:50rpx;
+}
+.top_icon{
+  width:120rpx;
+}
+.top_text{
+  font-size:12px;
+  color:#888;
+}
+.top_ewm{
+  margin-top:80rpx;
+  width:300rpx;
+}
+.label{
+  display:flex;
+  border-bottom:1rpx solid #ddd;
+  padding-top:10rpx;
+  line-height:88rpx;
+}
+.label_title{
+  font-size:16px;
+}
+.label_cnt{
+ 
+  flex-grow:1;
+  width:300rpx;
+}
+input{
+  background:none;
+}
+
+.submit{
+  margin-top:50rpx;
+}
+.rightText{
+  float: right;
+  display: block;
+  padding:0 5rpx 0 30rpx;
+  text-align: center;
+  display:flex;
+}
+.rightText image{
+  width:32rpx;
+  height: 32rpx;
+  vertical-align:middle;
+  margin: auto;
+  margin-right: 8rpx;
+}

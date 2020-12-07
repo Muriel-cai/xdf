@@ -1,0 +1,12 @@
+<image class="imgage" mode='widthFix' src='./i_backgroundImg.png'></image>
+<view class='box' wx:if='{{showPhone}}'>
+  <input placeholder='请输入报案人手机号' maxlength='11' type='number' focus='true' value="{{val}}" bindinput='phoneValidation'/>
+  <button class='ml_mt6' disabled='{{disabled}}' bindtap='goHome'>登录</button>
+</view>
+<view class='box' wx:if='{{showLocation}}'>
+  <view class='box_text'>
+    <icon type='warn' size='20'/>
+    <text class='box_text_text'>您必须授权位置、录像等功能才能才能继续使用，请点击下方按钮进行授权！</text>
+  </view>
+  <button class='ml_mt6' bindtap='getLocation'>重新获取授权</button>
+</view>

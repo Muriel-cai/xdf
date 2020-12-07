@@ -1,0 +1,8 @@
+<view class='help'>
+  <view class='help_box' bindtap='video'>
+    <image mode='widthFix' class='help_img' src='../../../icons/other_video.svg'></image>拍照求助
+  </view>
+  <view class='help_box' bindtap='call'>
+    <image mode='widthFix' class='help_img' src='../../../icons/other_call.svg'></image>电话求援
+  </view>
+</view>

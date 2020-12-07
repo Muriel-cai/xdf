@@ -1,0 +1,35 @@
+<view class='tab'>
+  <view
+    wx:for='{{example}}'
+    class='tab_list {{tabActive==item.img?"active":""}}'
+    data-ml="{{item.img}}"
+    bindtap='tabClickHandle'
+  >{{item.title}}</view>
+</view>
+<view class='example'>
+  <view class='exampleList'
+    wx:for='{{example}}'
+    hidden='{{tabActive!=item.img}}'
+    bindtap='openCamera'
+  >
+    <image src='./img/carexample_{{item.img}}.png'></image>
+  </view>
+</view>
+<scroll-view class='photos' scroll-x>
+  <view class='photos_tip' wx:if='{{!photos.length}}'>照片展示区域</view>
+  <view class='photos_img'
+    wx:for='{{photos}}'
+  >
+    <image mode="widthFix"
+      src="{{item}}"
+      data-ml_index="{{index}}"
+      bindtap='photoClick'
+    ></image>
+  </view>
+</scroll-view>
+<view class='ml_box'>
+  <button disabled='{{(okBtnOne && photos.length<5)||(!okBtnOne && photos.length<1)}}' bindtap='ok'>拍照完成</button>
+  <ml_help></ml_help>
+</view>
+
+<ml_camera ml_data="请拍照" cameraHide="{{cameraHide}}" bind:cameraBack='cameraBack' bind:photograph='photograph'></ml_camera>

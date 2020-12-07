@@ -1,0 +1,10 @@
+<view class='historycase' wx:for="{{proList}}">
+  <view class='hiscaseinfo'>
+    <view 
+      wx:for="{{item.content}}"
+      wx:for-item="item_i"
+    >{{item_i.title}}：{{item_i.text}}</view>
+  </view>
+  <image class='img_casezt' src='./img/img_{{item.img}}.png'></image>
+</view>
+<view class='footend'>没有更多了</view>

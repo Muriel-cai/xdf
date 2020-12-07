@@ -1,0 +1,10 @@
+<view class='camera' hidden='{{cameraHide}}'>
+  <view class='ml_data' hidden='{{cameraHide}}'>{{ml_data}}</view>
+  <camera hidden='{{cameraHide}}'></camera>
+  <view class='camera_back' bindtap='cameraBack'>
+    <image mode='aspectFit' src='../../../icons/icon_back.svg'></image>
+  </view>
+  <view class='camera_btn' bindtap='photograph'>
+    <image mode='aspectFit' src='../../../icons/icon_camera.png'></image>
+  </view>
+</view>

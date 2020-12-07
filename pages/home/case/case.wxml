@@ -1,0 +1,49 @@
+<view class='top'>
+  <view class='top_line'></view>
+  <view class='top_cnt'>
+    <view class='top_cnt_list {{item.state}}'
+      wx:for='{{stateList}}'
+      wx:key='{{item.id}}'
+    >
+      <view class='top_cnt_dot'>
+        <image src='./img/state_{{item.state}}.png'></image>
+      </view>
+      <view class='top_cnt_text'>{{item.text}}</view>
+    </view>
+  </view>
+</view>
+<view class='box'>
+  <view class='block'>
+    <view class='user'>
+      <image class='user_img' mode='widthFix' src='./img/img_baxx.png'></image>
+      <view class='user_cnt'>
+        <view>被保险人：{{customerName}}</view>
+        <view>承保车辆：{{carMark}}</view>
+        <view>报案时间：{{caseinform.case_time}}</view>
+      </view>
+    </view>
+  </view>
+  <navigator class='lookImg' url="./lookImg/lookImg">照片资料查看 <view style='float:right;font-weight:normal;'>{{photosNum}} 张</view></navigator>
+  <ml_block title="后台信息反馈" wx:if='{{repairInfo}}' hasR = false>{{repairInfo}}</ml_block>
+  <ml_block title="撤案" wx:if='{{assignmentStatus}}'>
+    <view class='ml_alignCenter'>{{cancelDescription}}</view>
+    <button class='block_btn' bindtap='undoAss'>确认</button>
+  </ml_block>
+  <ml_block title="该起事故快速定损" wx:if='{{havePrice}}' rightText="拨打电话" hasR ="true" bind:callnum="_callnum" >
+    <!-- <view  bindtap ="call" class="hasCall">拨打电话 </view> -->
+    <view class='ml_alignCenter'>
+      <view class='ml_gray3'>定损金额</view>
+      <view class='ml_red ml_fontLarge ml_fontBold'>￥{{totalAmount}}</view>
+    </view>
+    <button class='block_btn' disabled='{{customerConfirmed}}' bindtap='upAmount'>确认金额</button>
+  </ml_block>
+  <ml_block title="车主意见（可不填）" wx:if='{{totalAmount}}' >
+    <textarea placeholder='请输入您的意见和建议' auto-height='true' bindinput="subTextAreaBlur" value='{{subTextAreaBlurText}}'></textarea>
+    <view>{{}}</view>
+    <button class='block_btn' bindtap='sub'>提交</button>
+  </ml_block>
+  <view class='history'>
+    <view class='history_line'></view>
+    <navigator class='history_text' url='./history/history'>历史案件</navigator>
+  </view>
+</view>

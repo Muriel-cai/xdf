@@ -1,0 +1,142 @@
+page{
+  background:#f8f8f8;
+  font-size:14px;
+}
+.top{
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  padding:30rpx 60rpx 180rpx;
+  background:#0097FF;
+  color:#fff;
+  font-size:12px;
+  
+}
+.top_line{
+  position:absolute;
+  top:60rpx;
+  height:1rpx;
+  background:#fff;
+  width:630rpx;
+}
+.top_cnt{
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+}
+.top_cnt_list{
+  position:relative;
+  width:56rpx;
+}
+.top_cnt_list.ing{
+  font-weight:bold;
+  font-size:14px;
+}
+.top_cnt_list.will{
+  color:#97D2FB;
+}
+.top_cnt_list image{
+  margin-top:15rpx;
+  width:30rpx;
+  height:30rpx;
+}
+.top_cnt_list.ing image{
+  margin-top:8rpx;
+  width:44rpx;
+  height:44rpx;
+}
+.top_cnt_dot{
+  position:relative;
+  width:60rpx;
+  height:60rpx;
+  text-align:center;
+  background:#0097FF;
+}
+.top_cnt_text{
+  position:absolute;
+  top:60rpx;
+  left:0;
+  right:0;
+  text-align: center;
+  width:160rpx;
+  margin-left:-50rpx;
+}
+.box{
+  position:relative;
+  top:-80rpx;
+  padding:0 30rpx;
+}
+
+.block{
+  position: relative;
+  padding:30rpx;
+  background:#fff;
+  box-shadow:0 0 5px 0 #bbb;
+  border-radius:5px;
+  margin-bottom:30rpx;
+}
+.hasCall{
+  position: absolute;
+  z-index: 10;
+  right:0;
+  width:260rpx;
+  height:60rpx;
+  background:pink;
+}
+.user{
+  display:flex;
+  align-items:center;
+  color:#333;
+}
+.user_img{
+  width:120rpx;
+}
+.user_cnt{
+  flex-grow:1;
+  margin-left:30rpx;
+}
+
+
+.block_title{
+  font-size:16px;
+  font-weight:bold;
+  border-bottom:1px solid #ddd;
+  padding-bottom:20rpx;
+}
+.block_cnt{
+  padding-top:20rpx;
+  color:#888;
+}
+.block_btn{
+  margin-top:30rpx;
+}
+.history{
+  position:relative;
+  margin:30rpx 120rpx;
+  text-align:center;
+}
+.history_line{
+  position:absolute;
+  top:30rpx;
+  height:1rpx;
+  width:100%;
+  background:#ddd;
+}
+.history_text{
+  position:relative;
+  display:inline;
+  padding:0 30rpx;
+  line-height:60rpx;
+  background:#f8f8f8;
+  color:#888;
+}
+
+.lookImg{
+  padding:30rpx;
+  background:#fff;
+  box-shadow:0 0 5px 0 #bbb;
+  border-radius:5px;
+  margin-bottom:30rpx;
+  font-size:16px;
+  font-weight:bold;
+}

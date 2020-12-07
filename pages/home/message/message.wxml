@@ -1,0 +1,9 @@
+<view class='message'
+  wx:for='{{msg}}'
+>
+  <view class='title'>
+    <text class='title_title'>{{item.title}}</text>
+    <text class='title_time'>{{item.time}}</text>
+  </view>
+  <view class='cnt'>{{item.cnt}}</view>
+</view>

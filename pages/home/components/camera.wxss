@@ -1,0 +1,46 @@
+.ml_data{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:80rpx;
+  line-height:80rpx;
+  padding:0 20rpx;
+  color:#fff;
+  text-align:center;
+  background-color:#888;
+}
+.camera{
+  position:fixed;
+  z-index:1;
+  top:80rpx;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:#888;
+}
+.camera camera{
+  width:100%;
+  height:90%;
+}
+.camera_back,.camera_btn{
+  position:absolute;
+  bottom:3%;
+  height:5%;
+  color:#fff;
+}
+.camera_back{
+  left:20rpx;
+  width:100rpx;
+  text-align:left;
+}
+.camera_btn{
+  left:50%;
+  width:200rpx;
+  margin-left:-100rpx;
+  text-align:center;
+}
+.camera_back image,.camera_btn image{
+  width:100%;
+  height:100%;
+}

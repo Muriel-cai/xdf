@@ -1,0 +1,79 @@
+/**app.wxss**/
+/* rest */
+page{
+   font-size:16px; 
+   line-height:1.5;
+}
+input{
+  box-sizing:border-box;
+  width:100%;
+  height:88rpx; 
+  line-height:88rpx;
+  padding-left:20rpx;
+  border-radius:5px; 
+  background-color:#F7F7F7;
+}
+button{
+  height:88rpx;
+  line-height:88rpx;
+  color:#fff;
+  background-color:#0097FF;
+}
+button::after{
+  border:none;
+}
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* main */
+.ml_box{
+  padding-left:30rpx;
+  padding-right:30rpx;
+}
+.ml_mt3{
+  margin-top:30rpx;
+}
+.ml_mt4{
+  margin-top:40rpx;
+}
+.ml_mt6{
+  margin-top:60rpx;
+}
+
+.ml_fontBold{
+  font-weight:bold;
+}
+.ml_fontSmaller{
+  font-size:12px;
+}
+.ml_fontSmall{
+  font-size:14px;
+}
+.ml_fontNormal{
+  font-size:16px;
+}
+.ml_fontLarge{
+  font-size:18px;
+}
+
+.ml_alignCenter{
+  text-align:center;
+}
+
+.ml_red{
+  color:red
+}
+.ml_gray3{
+  color:#333;
+}
+
+.hide{
+  display:none;
+}

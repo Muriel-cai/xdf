@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b9cdfb"/>
+      <stop offset="1" stop-color="#92aefc"/>
+    </linearGradient>
+  </defs>
+  <g id="next_3" transform="translate(-70 -879)">
+    <circle id="椭圆_15" data-name="椭圆 15" class="cls-1" cx="24" cy="24" r="24" transform="translate(70 879)"/>
+    <path id="联合_5" data-name="联合 5" class="cls-2" d="M0,20.483l9.311-9.311L0,1.862,1.862,0,13.035,11.173,1.862,22.345Z" transform="translate(89 892)"/>
+  </g>
+</svg>

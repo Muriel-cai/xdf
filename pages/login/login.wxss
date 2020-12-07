@@ -1,0 +1,18 @@
+/* pages/login/login.wxss */
+.imgage{
+  width:750rpx;
+} 
+.box{
+  width:690rpx;
+  margin-top:100rpx;
+  margin-left:30rpx;
+}
+.box_text{
+  display:flex;
+  align-items:center;
+}
+.box_text_text{
+  flex-grow:1;
+  margin-left:20rpx;
+  color:#444;
+}

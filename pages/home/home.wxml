@@ -1,0 +1,47 @@
+<view class='top'>
+  <image class='top_image' src='./img/topBg.png' mode='widthFix'></image>
+  <view class='top_cnt'>
+    <text>车主名称：{{userData.customerName}}</text>
+    <view>车牌号码：{{userData.carMark}}</view>
+  </view>
+  
+  <!-- <navigator class='top_msg'
+    url="./message/message"
+  >
+    <text class='ml_fontBold'>{{userData.msg}}</text> 条未读消息
+  </navigator> -->
+</view>
+
+<view class='cnt'>
+  <navigator
+    wx:for="{{page_block}}"
+    url="{{item.url}}"
+  >
+    <view class='block'>
+      <view class='block_left'>
+        <view class='block_left_title'>{{item.title}}</view>
+      </view>
+      <image class='block_img' src='./img/img_{{item.img}}.svg'></image>
+    </view>
+  </navigator>
+
+  <view class='otherB' wx:if="{{!userData.customerType}}">
+    <navigator
+      wx:for="{{page_other}}"
+      url="{{item.url}}"
+    >
+      <view class='other'>
+        <image class='other_img' src='../../icons/other_{{item.img}}.svg' mode='widthFix'></image>
+        <view>{{item.txt}}</view>
+      </view>
+    </navigator>
+    <view class='other' bindtap='video'>
+      <image class='other_img' src='../../icons/other_video.svg' mode='widthFix'></image>
+      <view>拍照求助</view>
+    </view>
+    <view class='other' bindtap='call'>
+      <image class='other_img' src='../../icons/other_call.svg' mode='widthFix'></image>
+      <view>电话求助</view>
+    </view>
+  </view>
+</view>

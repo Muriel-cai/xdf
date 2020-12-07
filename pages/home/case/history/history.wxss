@@ -1,0 +1,25 @@
+page{
+  background-color: #f8f8f8;
+}
+.historycase{
+  background: #fff;
+  width: 690rpx;
+  box-shadow:0 0 5px 0 #bbb;
+  margin: 30rpx;
+  border-radius:5px;
+}
+.hiscaseinfo{
+  padding: 40rpx;
+}
+.img_casezt{
+  width: 144rpx;
+  height: 144rpx;
+  float: right;
+  margin-top: -144rpx;
+}
+.footend{
+  font-size: 28rpx;
+  color: #999;
+  margin: 60rpx;
+  text-align: center;
+}
